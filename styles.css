@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf6; /* Cor de fundo do sistema */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura da viewport */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #071d41; /* Cor de fundo do cabeçalho */
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 20px; /* Espaçamento lateral para o título */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Centraliza o menu */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white; /* Cor do texto do menu */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f1965c; /* Cor do texto ao passar o mouse sobre o item do menu */
+}
+
+.logo {
+    display: block; /* Faz a imagem ser um bloco */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px auto; /* Centraliza a imagem */
+}
+
+.welcome-container {
+    max-width: 600px; /* Largura máxima da caixa */
+    margin: 20px auto; /* Centraliza a caixa na página */
+    padding: 20px; /* Espaçamento interno */
+    background-color: white; /* Cor de fundo da caixa */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+.main-title {
+    color: #071d41; /* Cor do título principal */
+    margin: 20px 0; /* Espaçamento acima e abaixo do título */
+    padding: 0 20px; /* Espaçamento lateral para o título principal */
+}
+
+.sub-title {
+    color: #48362f; /* Cor do subtítulo */
+    margin: 10px 0; /* Espaçamento acima e abaixo do subtítulo */
+    padding: 0 20px; /* Espaçamento lateral para o subtítulo */
+}
+
+.normal-text {
+    color: #424242; /* Cor do texto normal */
+    margin: 10px 0; /* Espaçamento acima e abaixo do texto */
+    padding: 0 20px; /* Espaçamento lateral para o texto normal */
+}
+
+.button-container {
+    text-align: center; /* Centraliza os botões */
+    margin: 20px 0; /* Espaçamento acima e abaixo dos botões */
+}
+
+.button {
+    display: inline-block; /* Permite que os botões sejam alinhados lado a lado */
+    width: 25%; /* Largura dos botões como 25% do formulário */
+    padding: 10px; /* Espaçamento interno dos botões */
+    background-color: #071d41; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 4px; /* Bordas arredondadas */
+    margin: 0 10px; /* Espaçamento entre os botões */
+}
+
+.button:hover {
+    background-color: #48362f; /* Cor do botão ao passar o mouse */
+}
+
+.form-container {
+    max-width: 400px; /* Largura máxima da caixa do formulário */
+    margin: 50px auto; /* Centraliza a caixa na página */
+    padding: 20px; /* Espaçamento interno */
+    background-color: white; /* Cor de fundo da caixa */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+.form-title {
+    color: #071d41; /* Cor do título do formulário */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    padding: 0 20px; /* Espaçamento lateral para o título do formulário */
+}
+
+input {
+    width: 90%; /* Largura dos campos de entrada como 90% do formulário */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #f7f7f7; /* Cor de fundo dos campos */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+input:focus {
+    border-color: #f1965c; /* Cor da borda quando o campo está em foco */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+label {
+    display: block; /* Faz o rótulo ocupar toda a largura */
+    text-align: left; /* Alinha o texto do rótulo à esquerda */
+    color: #071d41; /* Cor do texto do rótulo */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    padding: 0 10px; /* Espaçamento lateral para o rótulo */
+}
+
+.footer {
+    background-color: #48362f; /* Cor de fundo do rodapé */
+    color: #a49b97; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px 0; /* Espaçamento interno do rodapé */
+    position: absolute; /* Mantém o rodapé na parte inferior do contêiner */
+    bottom: 0; /* Alinha o rodapé na parte inferior */
+    width: 100%; /* Largura total do rodapé */
+    margin-top: 20px; /* Espaçamento acima do rodapé */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .button {
+        width: 90%; /* Botões ocupam 90% da largura em telas menores */
+        margin: 10px 0; /* Espaçamento entre os botões */
+    }
+
+    input {
+        width: 80%; /* Campos de entrada ocupam 80% da largura em telas menores */
+    }
+}

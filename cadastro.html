@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Meta tag para codificação UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="page-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="form-container">
+            <h2 class="form-title">Cadastro</h2>
+            <form id="registrationForm"> <!-- ID do formulário de cadastro -->
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required> <!-- ID do campo Nome -->
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <!-- ID do campo Email -->
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required> <!-- ID do campo Senha -->
+                
+                <button type="submit" class="button">Cadastrar</button>
+            </form>
+            <p id="responseMessage" style="color: green;"></p> <!-- ID para mensagens de resposta -->
+        </div>
+        
+        <footer class="footer">
+            <p>© 2025 | Desenvolvido por José Ivan Simão da Silva, aluno do curso de ADS da UFCA.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
