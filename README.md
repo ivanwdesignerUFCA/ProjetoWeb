@@ -20,4 +20,4 @@ Este projeto tem como objetivo consolidar os conhecimentos adquiridos na discipl
 ## Instruções de Instalação e Execução
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seuusuario/projeto-web.git
+   git clone git clone https://github.com/seuusuario/projeto-web.git
